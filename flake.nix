@@ -23,9 +23,9 @@
           buildInputs = with pkgs; [
             pythonEnv
             nodejs_24
-            git
             ripgrep
             jq
+            mise
           ];
           shellHook = ''
             echo "Welcome to the development shell!"
