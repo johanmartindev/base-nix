@@ -43,5 +43,6 @@ max-jobs = 4
 ### VS Code
 * [Nix IDE](https://marketplace.visualstudio.com/items?itemName=jnoortheen.nix-ide)
 
-## Package Search
+## Packages
 * [Nix Packages Search](https://search.nixos.org/packages)
+* [Nixpkgs GitHub Repository](https://github.com/NixOS/nixpkgs)
