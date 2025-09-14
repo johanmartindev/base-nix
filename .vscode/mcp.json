@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "github-mcp": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp"
+    },
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp",
+        "--api-key",
+        "ctx7sk-be84ae96-45cc-4669-bb5a-e213d79ff6f3"
+      ]
+    }
+  }
+}
