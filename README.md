@@ -42,3 +42,6 @@ max-jobs = 4
 ## Editor integrations
 ### VS Code
 * [Nix IDE](https://marketplace.visualstudio.com/items?itemName=jnoortheen.nix-ide)
+
+## Package Search
+* [Nix Packages Search](https://search.nixos.org/packages)

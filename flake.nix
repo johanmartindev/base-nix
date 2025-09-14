@@ -11,18 +11,18 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        pythonPackages = ps: with ps; [
-          requests
-          pytest
-          black
-        ];
-        pythonEnv = pkgs.python311.withPackages pythonPackages;
-
       in {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
-            pythonEnv
             nodejs_24
+            typescript
+            typescript-language-server
+            tsx
+            yarn
+            pnpm
+            corepack
+            nodemon
+            node2nix
             ripgrep
             jq
             mise
