@@ -26,6 +26,7 @@
             ripgrep
             jq
             mise
+            rustc
           ];
           shellHook = ''
             echo "Welcome to the development shell!"
