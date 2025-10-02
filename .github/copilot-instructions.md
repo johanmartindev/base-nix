@@ -11,7 +11,7 @@ applyTo: '**/*.ts, **/*.mts, **/*.cts, flake.nix, mise.toml, template.md'
 - No application code is present by default; agents should focus on environment setup, shell configuration, and conventions.
 
 ## Environment Setup & Workflows
-- Use the devShell defined in `flake.nix` for all development tasks. Enter with `nix develop`.
+- Use the devShell defined in `flake.nix` for all development tasks. Enter with `use flake`.
 - Key tools available in the shell: `nodejs_24`, `typescript`, `tsx`, `yarn`, `pnpm`, `corepack`, `nodemon`, `node2nix`, `ripgrep`, `jq`, `mise`, `rustc`.
 - For onboarding and environment setup, see `template.md` (includes Nix, Flakes, Direnv instructions and config examples).
 - Direnv integration: Add `eval "$(direnv hook zsh)"` to your shell config and use the `use_flake` function for automatic shell activation.
@@ -39,7 +39,7 @@ applyTo: '**/*.ts, **/*.mts, **/*.cts, flake.nix, mise.toml, template.md'
 
 ## Example Workflow
 1. Enter the devShell: `nix develop`
-2. Use available tools (e.g., `tsc`, `tsx`, `node`, `yarn`, `pnpm`, `rustc`) for development.
+2. Use available tools (e.g., `tsc`, `tsx`, `node`, `yarn`, `rustc`) for development.
 3. For new code, follow TypeScript standards above (target: ESNext, module: NodeNext).
 4. For environment changes, update `flake.nix` and test with `nix develop`.
 5. For onboarding, follow steps in `template.md`.
